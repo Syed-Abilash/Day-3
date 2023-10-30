@@ -1,0 +1,228 @@
+Task 1: Simple Programs todo for variables
+
+1.Declare four variables without assigning values and print them in console
+ var a,b,c,d;
+ console.log(a);
+ console.log(b);
+ console.log(c);
+ console.log(d);
+
+2.How to get value of the variable myvar as output
+ 1
+
+3.Declare variables to store your first name, last name, marital status, country and age in multiple lines.
+var first name= ;
+var last name= ;
+var marital status= ;
+var country= ;
+var age= ;
+console.log("first name");
+console.log("last name");
+console.log("marital status");
+console.log("country");
+console.log("age");
+
+4.Declare variables to store your first name, last name, marital status, country and age in a single lineDeclare variables to store your first name, last name, marital status, country and age in a single line.
+var firstName = , 
+    lastName = , 
+    maritalStatus = , 
+    country = , 
+    age = ;
+
+5.Declare variables and assign string, boolean, undefined and null data types.
+var string = "I am 25 years old.";
+var boolean = true;
+var undefined = undefined;
+var null = null;
+console.log(string);
+console.log(boolean);
+console.log(undefined);
+console.log(null);
+string = "You are 30 years old.";
+console.log(stringVariable); 
+
+
+6.Convert the string to integer.
+ parseInt()
+
+7.Write 6 statement which provide truthy & falsey values.
+Truth
+ var String = "Hello, World!";
+ var Number = 42;
+ var Object = { key: "value" };
+ var Array = [1, 2, 3, 4, 5, 6, 7, 8];
+ var Function = function() { return true; };
+ var Expression = 1 + 1;
+
+False
+ var EmptyString = "";
+ var Zero = 0;
+ var Null = null;
+ var Undefined = undefined;
+ var NaN = NaN;
+ var False = false;
+
+ Task 2: Simple Programs todo for Operators
+
+ 1.Square of a number?
+var n = 5;
+var square = Math.pow(n, 2);
+console.log(square);
+
+2.Swapping 2 numbers?
+var a = 5;
+var b = 10;
+var temp = a;
+a = b;
+b = temp;
+console.log(a);
+console.log(b);
+
+3.Addition of 3 numbers?
+var a = 5;
+var b = 10;
+var c = 15;
+var sum = a+b+c;
+console.log(sum);
+
+4.Celsius to Fahrenheit conversion?
+var a = 47;
+var b = (a * 9/5) + 32;
+console.log(b);
+
+5.Meter to miles?
+var metersDistance = 1000;
+var milesDistance = metersDistance * 0.000621371;
+console.log(milesDistance);
+
+6.Pounds to kg?
+var pounds = 123;
+var kilograms = pounds* 0.45359237;
+console.log(kilograms);
+
+7.Calculate Batting Average?
+var total = 157;
+var Out = 8;
+var battingAverage = total / Out;
+console.log(battingAverage.toFixed(2));
+
+8.Calculate five test scores and print their average?
+var a1=50;
+var a2=46;
+var a3=75;
+var a4=78;
+var a5=93;
+var totalscores=a1+a2+a3+a4+a5;
+var numberofscores=5;
+var average=totalscores/numberofscores;
+console.log(average.toFixed(2));
+
+9.Power of any number x ^ y?
+var x = 2; 
+var y = 3;
+var result = x ** y;
+console.log(result);
+
+10.Calculate Simple Interest?
+var principal = 100;
+var RateofInterest = 5;
+var time = 2;
+var simpleInterest = (principal * RateofInterest * time) / 100;
+console.log(simpleInterest.toFixed(2));
+
+11.Calculate area of an equilateral triangle?
+var Length = 5;
+var triangleArea = (Length ** 2 * Math.sqrt(3)) / 4;
+console.log(triangleArea.toFixed(2));
+
+12.Area Of Isosceles Triangle?
+var baseLength = 6;
+var height = 8;
+var triangleArea = (baseLength * height) / 2;
+console.log(+triangleArea.toFixed(2));
+
+13.Volume Of Sphere?
+var sphereRadius = 3;
+var sphereVolume = (4/3) * Math.PI * Math.pow(sphereRadius, 3);
+console.log(sphereVolume.toFixed(2));
+
+14.Volume Of Prism?
+var baseArea = 25;
+var height = 10;
+var prismVolume = baseArea * height;
+console.log(prismVolume);
+
+15.Find area of a triangle?
+var base = 5;
+var height = 8;
+var triangleArea = (1/2) * base * height;
+console.log(triangleArea);
+
+
+16.Give the Actual cost and Sold cost, Calculate Discount Of Product?
+var actual = 100;
+var sold = 80;
+var discount = actual - sold;
+console.log(discount);
+
+17.Given their radius of a circle and find its diameter, circumference and area?
+var radius = 5;
+var diameter = 2 * radius;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * Math.pow(radius, 2);
+console.log(diameter);
+console.log(circumference.toFixed(2));
+console.log(area.toFixed(2));
+
+18.Given two numbers and perform all arithmetic operations?
+var a = 10;
+var b= 5;
+// Addition
+var sum = a + b;
+console.log(sum);
+// Subtraction
+var Subtraction = a- b;
+console.log(Subtraction);
+// Multiplication
+var product = a* b;
+console.log(product);
+// Division
+var quotient = a / b;
+console.log(quotient);
+// Modulus (Remainder)
+var remainder = a % b;
+console.log(remainder);
+
+19.Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+Answer:
+var Pattern = "*****\n";
+console.log(Pattern.repeat(5));
+
+20.Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+Answer:
+var wattsPerHour = 100;
+var hoursPerDay = 24;
+var daysPerMonth = 30; 
+var unitRate = 10;
+var energyConsumedInKWh = (wattsPerHour * hoursPerDay * daysPerMonth) / 1000;
+var totalCost = energyConsumedInKWh * unitRate;
+console.log(energyConsumedInKWh);
+console.log(totalCost);
+
+21.Program To Calculate CGPA?
+var grades = [3.7, 4.0, 3.3, 3.0, 3.7];
+var creditHours = [3, 4, 3, 3, 4]; 
+var totalGradePoints = 0;
+var totalCreditHours = 0;
+for (var i = 0; i < grades.length; i++) {
+    totalGradePoints += grades[i] * creditHours[i];
+    totalCreditHours += creditHours[i];
+}
+var cgpa = totalGradePoints / totalCreditHours;
+console.log("CGPA: " + cgpa.toFixed(2));
